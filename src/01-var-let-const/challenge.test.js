@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   obtenerPI,
   obtenerContador,
   obtenerNombreCurso,
@@ -7,7 +7,7 @@ const {
   calcularTotal,
   identificarTipos,
   demostrarHoisting,
-} = require("./challenge.js");
+} from"./challenge.js";
 
 describe("Reto 01 - Var, Let y Const", () => {
   describe("Reto 1: obtenerPI", () => {
