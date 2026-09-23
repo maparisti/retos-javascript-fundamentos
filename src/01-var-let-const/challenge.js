@@ -83,6 +83,8 @@ function identificarTipos() {
   };
 }
 
+
+
 // --- Reto 7: Hoisting ---
 // Esta función simula el comportamiento del hoisting con var.
 // Sin modificar el orden de las líneas, haz que la función
@@ -99,6 +101,14 @@ function demostrarHoisting() {
     despues,
   };
 }
+
+console.log(obtenerPI());
+console.log(obtenerContador());
+console.log(obtenerNombreCurso());
+console.log(reasignarMensaje());
+console.log(calcularTotal());
+console.log(identificarTipos());
+console.log(demostrarHoisting());
 
 export {
   obtenerPI,

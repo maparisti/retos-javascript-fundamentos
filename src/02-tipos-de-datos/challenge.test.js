@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   identificarPrimitivos,
   diferenciarStringNumber,
   explorarNull,
@@ -9,7 +9,7 @@ const {
   trabajarConArreglos,
   funcionComoValor,
   clasificarTipo,
-} = require("./challenge.js");
+} from"./challenge.js";
 
 describe("Reto 02 - Tipos de datos: primitivos vs complejos", () => {
   describe("Reto 1: identificarPrimitivos", () => {
