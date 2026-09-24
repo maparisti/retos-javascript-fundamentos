@@ -102,14 +102,6 @@ function demostrarHoisting() {
   };
 }
 
-console.log(obtenerPI());
-console.log(obtenerContador());
-console.log(obtenerNombreCurso());
-console.log(reasignarMensaje());
-console.log(calcularTotal());
-console.log(identificarTipos());
-console.log(demostrarHoisting());
-
 export {
   obtenerPI,
   obtenerContador,

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   calcularSuma,
   calcularResta,
   calcularMultiplicacion,
@@ -15,7 +15,7 @@ const {
   resultadoDivisionPorCero,
   obtenerNaN,
   esValorNaN,
-} = require("./challenge.js");
+} from"./challenge.js";
 
 describe("Reto 03 - Operadores aritméticos en JavaScript", () => {
   describe("Reto 1: calcularSuma", () => {
