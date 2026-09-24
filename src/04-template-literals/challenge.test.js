@@ -1,24 +1,24 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   crearMensajeBienvenida,
   concatenarConMas,
   interpolarVariables,
   calcularTotalComoString,
   tipoDeResultadoInterpolado,
   crearNotaMultilinea,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 04 - Template literals en JavaScript", () => {
   describe("Reto 1: crearMensajeBienvenida", () => {
     it("retorna mensaje con nombre y versión interpolados", () => {
       expect(crearMensajeBienvenida("JavaScript", "6")).toBe(
-        "Bienvenido a JavaScript, versión 6."
+        "Bienvenido a JavaScript, versión 6.",
       );
     });
 
     it("funciona con otros valores", () => {
       expect(crearMensajeBienvenida("Node", "20")).toBe(
-        "Bienvenido a Node, versión 20."
+        "Bienvenido a Node, versión 20.",
       );
     });
   });
@@ -36,13 +36,13 @@ describe("Reto 04 - Template literals en JavaScript", () => {
   describe("Reto 3: interpolarVariables", () => {
     it("retorna frase con nombre y curso interpolados", () => {
       expect(interpolarVariables("JavaScript", "Fundamentos")).toBe(
-        "Curso de JavaScript: Fundamentos."
+        "Curso de JavaScript: Fundamentos.",
       );
     });
 
     it("funciona con otros valores", () => {
       expect(interpolarVariables("React", "Avanzado")).toBe(
-        "Curso de React: Avanzado."
+        "Curso de React: Avanzado.",
       );
     });
   });

@@ -11,21 +11,21 @@
 // Retorna el string: "Bienvenido a [nombre], versión [version]."
 // Usa template literals con ${nombre} y ${version}.
 function crearMensajeBienvenida(nombre, version) {
-  // Tu código aquí
+  return `Bienvenido a ${nombre}, versión ${version}.`;
 }
 
 // --- Reto 2: Concatenación tradicional (contraste con +) ---
 // Recibe dos strings "parte1" y "parte2".
 // Retorna un solo string uniendo parte1 + " " + parte2 (concatenación con +).
 function concatenarConMas(parte1, parte2) {
-  // Tu código aquí
+  return parte1 + " " + parte2;
 }
 
 // --- Reto 3: Interpolar variables en una frase ---
 // Recibe "nombre" (ej: "JavaScript") y "curso" (ej: "Fundamentos").
 // Retorna: "Curso de [nombre]: [curso]." usando template literals.
 function interpolarVariables(nombre, curso) {
-  // Tu código aquí
+  return `Curso de ${nombre}: ${curso}.`;
 }
 
 // --- Reto 4: Expresión dentro de template literal ---
@@ -33,14 +33,15 @@ function interpolarVariables(nombre, curso) {
 // Retorna un string con el resultado de precio * cantidad usando
 // un template literal: `${precio * cantidad}` (el resultado queda como string).
 function calcularTotalComoString(precio, cantidad) {
-  // Tu código aquí
+  return `${precio * cantidad}`;
 }
 
 // --- Reto 5: Tipo de dato del resultado de interpolación ---
 // Sin parámetros. Retorna el tipo de dato de la expresión `${1 + 2}`.
 // Pista: usa typeof. El resultado de interpolación siempre es string.
 function tipoDeResultadoInterpolado() {
-  // Tu código aquí
+  const resultado = `${1 + 2}`;
+  return typeof resultado;
 }
 
 // --- Reto 6: Texto multilínea con template literals ---
@@ -51,10 +52,12 @@ function tipoDeResultadoInterpolado() {
 //   - [item2]
 // Usa template literals con saltos de línea nativos (no uses \n).
 function crearNotaMultilinea(titulo, item1, item2) {
-  // Tu código aquí
+  return `${titulo}
+  - ${item1}
+  - ${item2}`;
 }
 
-module.exports = {
+export {
   crearMensajeBienvenida,
   concatenarConMas,
   interpolarVariables,
