@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   resultadoConcatenacionMas,
   resultadoRestaConString,
   booleanoMasUno,
@@ -7,7 +7,7 @@ const {
   parsearEnteroYDecimal,
   convertirNumeroAString,
   convertirABooleano,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 06 - Coerción de tipos en JavaScript", () => {
   describe("Reto 1: resultadoConcatenacionMas", () => {

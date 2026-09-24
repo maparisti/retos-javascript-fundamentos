@@ -11,7 +11,7 @@
 // Retorna el resultado de str + num (JavaScript concatena, no suma).
 // Ejemplo: '5' + 3 → '53'
 function resultadoConcatenacionMas(str, num) {
-  // Tu código aquí
+  return str + num;
 }
 
 // --- Reto 2: Coerción implícita con el operador - ---
@@ -19,7 +19,7 @@ function resultadoConcatenacionMas(str, num) {
 // Retorna el resultado de str - num (JavaScript convierte el string a número).
 // Ejemplo: '5' - 3 → 2
 function resultadoRestaConString(str, num) {
-  // Tu código aquí
+  return str - num;
 }
 
 // --- Reto 3: Booleano en operación numérica ---
@@ -27,14 +27,14 @@ function resultadoRestaConString(str, num) {
 // Retorna el resultado de bool + 1 (JavaScript convierte el booleano a número).
 // Ejemplo: true + 1 → 2, false + 1 → 1
 function booleanoMasUno(bool) {
-  // Tu código aquí
+  return bool + 1;
 }
 
 // --- Reto 4: Conversión explícita de string a número ---
 // Recibe "str" (string que representa un número, ej: '42').
 // Retorna el número usando Number(str). Ejemplo: Number('42') → 42
 function convertirStringANumero(str) {
-  // Tu código aquí
+  return Number(str);
 }
 
 // --- Reto 5: Parsear entero y decimal ---
@@ -43,24 +43,27 @@ function convertirStringANumero(str) {
 //   entero = parseInt(strEntero, 10)
 //   decimal = parseFloat(strDecimal)
 function parsearEnteroYDecimal(strEntero, strDecimal) {
-  // Tu código aquí
+  return {
+    entero: parseInt(strEntero, 10),
+    decimal: parseFloat(strDecimal),
+  };
 }
 
 // --- Reto 6: Conversión explícita de número a string ---
 // Recibe "num" (número, ej: 123).
 // Retorna el string usando String(num). Ejemplo: String(123) → '123'
 function convertirNumeroAString(num) {
-  // Tu código aquí
+  return String(num);
 }
 
 // --- Reto 7: Conversión explícita a booleano ---
 // Recibe "val" (cualquier valor: número, string, etc.).
 // Retorna el booleano usando Boolean(val). Ejemplo: Boolean(1) → true, Boolean(0) → false
 function convertirABooleano(val) {
-  // Tu código aquí
+  return Boolean(val);
 }
 
-module.exports = {
+export {
   resultadoConcatenacionMas,
   resultadoRestaConString,
   booleanoMasUno,
