@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   resultadoIgualdadDebil,
   resultadoDesigualdadDebil,
   resultadoIgualdadEstricta,
@@ -7,7 +7,7 @@ const {
   sonIgualesConCoercion,
   sonIgualesValorYTipo,
   nullYUndefinedSonIgualesDebil,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 07 - Igualdad débil vs estricta en JavaScript", () => {
   describe("Reto 1: resultadoIgualdadDebil", () => {
