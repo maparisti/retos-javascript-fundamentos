@@ -10,14 +10,18 @@
 // Recibe "edad" (número). Retorna true si edad >= 18, false en caso contrario.
 // Usa if y else (o solo return de una comparación).
 function esMayorDeEdad(edad) {
-  // Tu código aquí
+  return edad >= 18;
 }
 
 // --- Reto 2: Mensaje según condición ---
 // Recibe "edad" (número). Si edad >= 18 retorna 'eres mayor de edad',
 // si no, retorna 'eres menor de edad'. Usa if y else con return.
 function mensajeEdad(edad) {
-  // Tu código aquí
+  if (edad >= 18) {
+    return "eres mayor de edad";
+  } else {
+    return "eres menor de edad";
+  }
 }
 
 // --- Reto 3: else if para caso exacto ---
@@ -27,14 +31,20 @@ function mensajeEdad(edad) {
 // - 'eres menor de edad' en cualquier otro caso
 // Usa if, else if y else. Prioriza la condición más restrictiva primero.
 function mensajeEdadDetallado(edad) {
-  // Tu código aquí
+  if (Number(edad) >= 19) {
+    return "eres mayor de edad";
+  } else if (Number(edad) === 18) {
+    return "Tienes dieciocho años";
+  } else {
+    return "eres menor de edad";
+  }
 }
 
 // --- Reto 4: Validar umbral con >= ---
 // Recibe "valor" (número) y "minimo" (número).
 // Retorna true si valor >= minimo, false en caso contrario.
 function cumpleMinimo(valor, minimo) {
-  // Tu código aquí
+  return valor >= minimo;
 }
 
 // --- Reto 5: Nivel de acceso por edad ---
@@ -44,7 +54,13 @@ function cumpleMinimo(valor, minimo) {
 // - 'menor' si edad < 18
 // Usa if, else if y else con comparaciones (>=, ===, <).
 function nivelAcceso(edad) {
-  // Tu código aquí
+  if (Number(edad) >= 19) {
+    return "adulto";
+  } else if (Number(edad) === 18) {
+    return "dieciocho";
+  } else {
+    return "menor";
+  }
 }
 
 // --- Reto 6: Acceso con condición (edad o permiso) ---
@@ -52,10 +68,10 @@ function nivelAcceso(edad) {
 // Retorna true si la persona puede entrar: ya sea edad >= 18 O tiene permiso especial.
 // Retorna false en caso contrario.
 function puedeEntrar(edad, tienePermisoEspecial) {
-  // Tu código aquí
+  return edad >= 18 || tienePermisoEspecial === true;
 }
 
-module.exports = {
+export {
   esMayorDeEdad,
   mensajeEdad,
   mensajeEdadDetallado,

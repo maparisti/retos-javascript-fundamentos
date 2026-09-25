@@ -1,12 +1,12 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   esMayorDeEdad,
   mensajeEdad,
   mensajeEdadDetallado,
   cumpleMinimo,
   nivelAcceso,
   puedeEntrar,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 09 - If, else y else if en JavaScript", () => {
   describe("Reto 1: esMayorDeEdad", () => {
