@@ -1,12 +1,12 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   resultadoAnd,
   resultadoOr,
   resultadoNot,
   puedeVerListaUsuarios,
   puedeAcceder,
   mostrarOpcionLimitada,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 08 - Operadores lógicos AND, OR y NOT en JavaScript", () => {
   describe("Reto 1: resultadoAnd", () => {
