@@ -52,7 +52,7 @@ function clavesYValores(objeto) {
   // Tu código aquí
 }
 
-module.exports = {
+export {
   numerosHastaN,
   contarConWhile,
   contarConDoWhile,

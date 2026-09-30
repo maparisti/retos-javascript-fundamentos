@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   tipoDeDia,
   mensajeOpcion,
   categoriaPorCodigo,
   diasDelMes,
   nivelDeUsuario,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 10 - Switch en JavaScript", () => {
   describe("Reto 1: tipoDeDia", () => {

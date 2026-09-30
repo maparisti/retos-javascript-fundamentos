@@ -1,12 +1,12 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   numerosHastaN,
   contarConWhile,
   contarConDoWhile,
   formatearNotasConFor,
   tieneManzana,
   clavesYValores,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 11 - Bucles for, while y for...of en JavaScript", () => {
   describe("Reto 1: numerosHastaN", () => {
