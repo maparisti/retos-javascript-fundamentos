@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const { saludar, crearUsuario, multiplicar, crearNota } = require("./challenge.js");
+import { saludar, crearUsuario, multiplicar, crearNota } from "./challenge.js";
 
 describe("Reto 13 - Anatomía de funciones en JavaScript", () => {
   describe("Reto 1: saludar", () => {

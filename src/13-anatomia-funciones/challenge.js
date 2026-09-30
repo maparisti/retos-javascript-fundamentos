@@ -10,7 +10,7 @@
 // Recibe "nombre" (string). Retorna un string con template literal: "Hola, {nombre}".
 // Ejemplo: saludar('Óscar') → "Hola, Óscar"
 function saludar(nombre) {
-  // Tu código aquí
+  return `Hola, ${nombre}`;
 }
 
 // --- Reto 2: Función que crea un objeto usuario (parámetros y retorno) ---
@@ -18,27 +18,29 @@ function saludar(nombre) {
 // Los parámetros son las variables; los argumentos son los valores al invocar.
 // Ejemplo: crearUsuario('Ana', 25) → { nombre: 'Ana', edad: 25 }
 function crearUsuario(nombre, edad) {
-  // Tu código aquí
+  return {
+    nombre: nombre,
+    edad: edad,
+  };
 }
 
 // --- Reto 3: Arrow function con retorno implícito ---
 // Recibe "a" y "b" (números). Retorna a * b (equivalente a una arrow de una línea: (a, b) => a * b).
 // Ejemplo: multiplicar(4, 5) → 20
-function multiplicar(a, b) {
-  // Tu código aquí
-}
+const multiplicar = (a, b) => a * b;
+
+console.log(multiplicar(3, 5));
 
 // --- Reto 4: Arrow function con parámetro por defecto y Date.now() ---
 // Recibe "contenido" (string) y "titulo" (string, opcional, por defecto 'sin título').
 // Retorna un objeto { titulo, contenido, creado } donde creado = Date.now() (número en ms).
 // Ejemplo: crearNota('Mi contenido') → { titulo: 'sin título', contenido: 'Mi contenido', creado: 1234567890123 }
-function crearNota(contenido, titulo) {
-  // Tu código aquí
-}
-
-module.exports = {
-  saludar,
-  crearUsuario,
-  multiplicar,
-  crearNota,
+const crearNota = (contenido, titulo = "sin título") => {
+  return {
+    contenido,
+    titulo,
+    creado: Date.now(),
+  };
 };
+
+export { saludar, crearUsuario, multiplicar, crearNota };
