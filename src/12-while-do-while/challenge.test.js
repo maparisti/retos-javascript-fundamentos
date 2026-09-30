@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   numerosConWhile,
   contarHastaLimite,
   doWhileAlMenosUnaVez,
   mensajesEntradaDoWhile,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 12 - while en JavaScript: evita bucles infinitos", () => {
   describe("Reto 1: numerosConWhile", () => {
@@ -56,7 +56,7 @@ describe("Reto 12 - while en JavaScript: evita bucles infinitos", () => {
       ]);
     });
 
-    it("para limite 0 ejecuta al menos una vez y retorna [\"Entra en 0\"]", () => {
+    it('para limite 0 ejecuta al menos una vez y retorna ["Entra en 0"]', () => {
       expect(mensajesEntradaDoWhile(0)).toEqual(["Entra en 0"]);
     });
 
