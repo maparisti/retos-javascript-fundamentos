@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   accederGlobal,
   scopeFuncion,
   scopeBloque,
@@ -8,7 +8,7 @@ const {
   returnVsConsole,
   demostrarHoistingVar,
   templateLiteralsScope,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 02 - Scope en JavaScript: global, función y bloque", () => {
   describe("Reto 1: accederGlobal", () => {
@@ -107,7 +107,9 @@ describe("Reto 02 - Scope en JavaScript: global, función y bloque", () => {
 
   describe("Reto 8: templateLiteralsScope", () => {
     it("debe retornar el mensaje completo con template literals", () => {
-      expect(templateLiteralsScope()).toBe("Bienvenido Ana con rol admin en MiApp");
+      expect(templateLiteralsScope()).toBe(
+        "Bienvenido Ana con rol admin en MiApp",
+      );
     });
 
     it("debe retornar un string", () => {
