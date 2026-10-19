@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   extraerDatosBasicos,
   extraerNotaRenombrada,
   extraerCiudadAnidada,
@@ -10,7 +10,7 @@ const {
   obtenerValores,
   obtenerEntradas,
   objetoAStringArray,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 18 - Destructuración de objetos en JavaScript", () => {
   describe("Reto 1: extraerDatosBasicos", () => {
@@ -29,7 +29,10 @@ describe("Reto 18 - Destructuración de objetos en JavaScript", () => {
     it("debe retornar objeto con titulo y contenido renombrados", () => {
       const nota = { ID: 1, title: "Mi nota", content: "Contenido aquí" };
       const resultado = extraerNotaRenombrada(nota);
-      expect(resultado).toEqual({ titulo: "Mi nota", contenido: "Contenido aquí" });
+      expect(resultado).toEqual({
+        titulo: "Mi nota",
+        contenido: "Contenido aquí",
+      });
       expect(resultado).not.toHaveProperty("title");
       expect(resultado).not.toHaveProperty("content");
     });
@@ -162,7 +165,10 @@ describe("Reto 18 - Destructuración de objetos en JavaScript", () => {
 
     it("debe funcionar con valores de tipo string", () => {
       const objeto = { nombre: "Ana", ciudad: "Madrid" };
-      expect(objetoAStringArray(objeto)).toEqual(["nombre: Ana", "ciudad: Madrid"]);
+      expect(objetoAStringArray(objeto)).toEqual([
+        "nombre: Ana",
+        "ciudad: Madrid",
+      ]);
     });
   });
 });

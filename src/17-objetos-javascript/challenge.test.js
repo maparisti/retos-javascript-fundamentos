@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-const {
+import {
   crearUsuario,
   obtenerNombre,
   obtenerPropiedadDinamica,
@@ -10,7 +10,7 @@ const {
   agregarPropiedad,
   crearCalculadora,
   obtenerTwitter,
-} = require("./challenge.js");
+} from "./challenge.js";
 
 describe("Reto 17 - Objetos en JavaScript", () => {
   describe("Reto 1: crearUsuario", () => {
@@ -72,8 +72,8 @@ describe("Reto 17 - Objetos en JavaScript", () => {
         nombre: "Ana",
         direccion: {
           calle: "Calle Principal",
-          ciudad: "Barcelona"
-        }
+          ciudad: "Barcelona",
+        },
       };
       expect(obtenerCiudad(usuario)).toBe("Barcelona");
     });
@@ -87,8 +87,8 @@ describe("Reto 17 - Objetos en JavaScript", () => {
       const usuario = {
         nombre: "Ana",
         direccion: {
-          calle: "Calle Principal"
-        }
+          calle: "Calle Principal",
+        },
       };
       expect(obtenerCiudad(usuario)).toBeUndefined();
     });
@@ -121,8 +121,8 @@ describe("Reto 17 - Objetos en JavaScript", () => {
         especificaciones: {
           marca: "TechBrand",
           memoria: "16GB",
-          almacenamiento: "512GB SSD"
-        }
+          almacenamiento: "512GB SSD",
+        },
       };
       expect(obtenerMemoria(producto)).toBe("16GB");
     });
@@ -137,8 +137,8 @@ describe("Reto 17 - Objetos en JavaScript", () => {
         nombre: "Laptop",
         especificaciones: {
           marca: "TechBrand",
-          almacenamiento: "512GB SSD"
-        }
+          almacenamiento: "512GB SSD",
+        },
       };
       expect(obtenerMemoria(producto)).toBeUndefined();
     });
@@ -193,9 +193,9 @@ describe("Reto 17 - Objetos en JavaScript", () => {
         perfil: {
           redes: {
             twitter: "@ana_dev",
-            instagram: "@ana_insta"
-          }
-        }
+            instagram: "@ana_insta",
+          },
+        },
       };
       expect(obtenerTwitter(usuario)).toBe("@ana_dev");
     });
@@ -209,8 +209,8 @@ describe("Reto 17 - Objetos en JavaScript", () => {
       const usuario = {
         nombre: "Ana",
         perfil: {
-          bio: "Desarrolladora"
-        }
+          bio: "Desarrolladora",
+        },
       };
       expect(obtenerTwitter(usuario)).toBe("no-disponible");
     });
@@ -220,9 +220,9 @@ describe("Reto 17 - Objetos en JavaScript", () => {
         nombre: "Ana",
         perfil: {
           redes: {
-            instagram: "@ana_insta"
-          }
-        }
+            instagram: "@ana_insta",
+          },
+        },
       };
       expect(obtenerTwitter(usuario)).toBe("no-disponible");
     });
